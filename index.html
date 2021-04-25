@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href=".//bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     
-    <title>Tonlion way Pizza</title>
+    <title>Tonlion Jeo way Pizza</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     
 
     <div class="container"></div>
-        <h1>TONLION WAY</h1>
+        <h1>TONLION JEO WAY</h1>
 
         <h4>TRUE ITALIAN FLAVOR</h4>
 
@@ -39,6 +39,12 @@
                 <img src="images/Image 3.jpeg" style="width:100%">
                 <div class="text">Caption Three</div>
             </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/image 4.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
         
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -52,16 +58,12 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-       
-        
-            
 
-        
-        
+             
 
         <div id="orderForm">
             <div class="container" id="intro">
-                <h5>Benvenuti!</h5>
+                <h5>BENVENUTI!</h5>
                 <br>
 
                 <button type="button" class="btn btn-default" id="introButton">Start your order</button>
@@ -80,17 +82,17 @@
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="size" value="Per Due"> Per Due
+                            <input type="radio" name="size" value="Per Due" checked> Per Due
                         </label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="size" value="Per Quattro"> Per Quattro
+                            <input type="radio" name="size" value="Per Quattro" checked> Per Quattro
                         </label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="size" value="Per Otto"> Per Otto
+                            <input type="radio" name="size" value="Per Otto" checked> Per Otto
                         </label>
                     </div>
                     <br>
@@ -98,7 +100,7 @@
                     <br>
                 </div>
             </div>
-            <div class="container" id="toppingMenu">
+            <div class="container" id="memoryItem">
                 <div class="form-group">
                     <h3>Add Toppings</h3>
                     <h2>You may add one, multiple or none.</h2>
@@ -135,6 +137,8 @@
                 <button type="button" class="btn btn-success" id="subtotalButton">Complete Your Order</button>
                 <button type="button" class="btn btn-info" id="addPizza">Add Another Pizza</button>
                 <button type="button" class="btn btn-danger" id="removePizzaButton">Remove A Pizza</button>
+                <button type="button" onclick="calculatePrice()">Calculate</button>
+                The new calculated price:<INPUT type="text" id="PicExtPrice">
                 <br>
                 <br>
             </div>
@@ -226,9 +230,10 @@
     </div>
     <br>
     <div class="footer">
-        <h4>Our Address and phone number goes here</h4>
+        <h4>Our Address and phone number goes here:</h4> ephraimkamau@gmail.com 
+               /0745734706
     </div>
-<script src="js/jquery-3.4.1.js"></script>
+<script src=".//js/jquery-3.4.1.js"></script>
 <script src="js/script.js"></script>
 
 </body>

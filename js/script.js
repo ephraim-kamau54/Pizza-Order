@@ -1,3 +1,49 @@
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+var playermoney = 10000;
+var islandarray = new Array(); //array was undefined. 
+// a more concise way to write this by the way is: var islandarray = [];
+var car = 500; var watch = 100;
+var diamond = 2000;
+function hideImage() {
+    if (document.getElementById) {
+        document.getElementById('islandimg').style.visibility = 'hidden';
+    }
+}//Missing end braces 
+
+hideImage(); //missing call to the function 
+
+"By the way, the easiest way to find out of these issues is to look at Chrome / Firefox console, it will complain on things like the array variable issue."
+
+
+
+
 // Business Logic for Order
 //Object Constructor for Order
 function Order() {
@@ -7,7 +53,7 @@ function Order() {
     // this.address = [];
 };
 //Order prototype methods
-Order.prototype.addPizza = function (pizza) {
+Order.prototype.addPizza = function  (pizza) {
     pizza.id = this.assignId();
     this.pizzas.push(pizza);
     this.total += pizza.price();
@@ -50,7 +96,7 @@ Pizza.prototype.price = function () {
             price += 1;
         }
     }
-    return price;
+    return price ; number;
 };
 
 Order.prototype.deletePizza = function (id) {
@@ -134,7 +180,7 @@ $(document).ready(function () {
 
     $("#addPizza").click(function () {
 
-        $("#sizeMenu").fadeIn();
+        $("#sizeMenuButton").fadeIn();
         $("#subtotal").hide();
     });
 
@@ -213,31 +259,27 @@ $(document).ready(function () {
         event.preventDefault();
     });
 });
-var slideIndex = 1;
-showSlides(slideIndex);
+function calculatePrice() {
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+    //Get selected data  
+    var elt = document.getElementById("memoryItem");
+    var memory = elt.options[elt.selectedIndex].value;
 
+    elt = document.getElementById("hddItem");
+    var hdd = elt.options[elt.selectedIndex].value;
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+    elt = document.getElementById("networkItem");
+    var network = elt.options[elt.selectedIndex].value;
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    //convert data to integers
+    memory = parseInt(memory);
+    hdd = parseInt(hdd);
+    network = parseInt(network);
+
+    //calculate total value  
+    var total = memory + hdd + network;
+
+    //print value to  PicExtPrice 
+    document.getElementById("PicExtPrice").value = total;
+
 }
