@@ -1,240 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link href=".//bootstrap.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA BASE</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="css" href=".//css/bootstrap.css" type="text/css">
     
-    <title>Tonlion Jeo way Pizza</title>
 </head>
 
 <body>
 
+    <div class="container">
+        <div class="top col-md-12">
+            <nav class="navbar navbar-expand-sm navbar navbar-dark">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#jumbotron">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#custom-pizza">Pizza & Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#price-content">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
     
-
-    <div class="container"></div>
-        <h1>TONLION JEO WAY</h1>
-
-        <h4>TRUE ITALIAN FLAVOR</h4>
-
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-        
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/Image 1.jpeg" style="width:100%">
-                <div class="text">Caption Text</div>
-            </div>
-        
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/Image 2.jpeg" style="width:100%">
-                <div class="text">Caption Two</div>
-            </div>
-        
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="images/Image 3.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="images/image 4.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-        
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-             
-
-        <div id="orderForm">
-            <div class="container" id="intro">
-                <h5>BENVENUTI!</h5>
-                <br>
-
-                <button type="button" class="btn btn-default" id="introButton">Start your order</button>
-                <br>
-                <br>
-            </div>
-            <div class="container" id="sizeMenu">
-                <div class="form-group">
-                    <h3>Select Pizza Size</h3>
-                    <h2>Our pizzas come with puréed tomatoe base, mozzarella and authentic italian herbs.</h2>
-                    <br>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="size" value="Personale" checked> Personale
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="size" value="Per Due" checked> Per Due
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="size" value="Per Quattro" checked> Per Quattro
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="size" value="Per Otto" checked> Per Otto
-                        </label>
-                    </div>
-                    <br>
-                    <button type="button" class="btn btn-default" id="sizeMenuButton">Next</button>
-                    <br>
-                </div>
-            </div>
-            <div class="container" id="memoryItem">
-                <div class="form-group">
-                    <h3>Add Toppings</h3>
-                    <h2>You may add one, multiple or none.</h2>
-                    <div class="checkbox">
-                        <input type="checkbox" name="topping" value="Prosciutto" checkbox> Prosciutto $4.00
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni $3.00
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="topping" value="Sausage"> Sausage $2.00
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="topping" value="Basil"> Basil $1.00
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="topping" value="Arugula"> Arugula $1.00
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="topping" value="Blue Cheese"> Blue Cheese $1.00
-                    </div>
-                    <br>
-                    <button type="button" class="btn btn-default" id="toppingMenuButton">Your Order Summary</button>
-                    <br>
-                </div>
-            </div>
-            <div class="container" id="subtotal">
-                <h3>Your Order Summary</h3>
-                <br>
-                <ul id="orders">
+    <div class="menu">
+        <h1>TRUE ITALIAN MENU</h1>
+        <div class="card">
+            <div class="card-body">
+                <ul>
+                    <li> <img src="images/Image 1.jpeg" alt="" style="max-width: 10%;">
+                        <strong> pepperloni</strong>- The salty and slightly spicy taste holds its own against waves of
+                        melty, gooey cheese and gets ever-so-slightly crisped
+                        
+                    </li>
+                    <br><br>
+                    <li> <img src="images/Image 2.jpeg" alt="" style="max-width: 10%;"><strong> Margherita</strong>- This Neopaltian-style pizza has thin crust, fresh tomato sauce,
+                    fresh mozzarella cheese, and just a few leaves of basil
+                        
+                    </li>
+                    <br><br>
+                    <li> <img src="images/Image 3.jpeg" alt="" style="max-width: 10%;">
+                        <strong>Hawaiian pizza </strong>- A combination of tomato sauce, cheese, ham, and pineapple.That is as beloved as it is
+                        despised still makes our list of iconic pizzas
+                        
+                    </li>
+                    <br><br>
+                    <li> <img src="images/image 4.jpeg" alt="" style="max-width: 10%;">
+                        <strong>CHICKEN BBQ</strong>-Pizza creation was made with BBQ sauce, chicken, cilantro, red
+                        onions, and fontina cheese
+                        
+                    </li>
+                    <br><br>
                 </ul>
-                <p>Total: $<span id="total"></span>.00</p>
-                <br>
-                <button type="button" class="btn btn-success" id="subtotalButton">Complete Your Order</button>
-                <button type="button" class="btn btn-info" id="addPizza">Add Another Pizza</button>
-                <button type="button" class="btn btn-danger" id="removePizzaButton">Remove A Pizza</button>
-                <button type="button" onclick="calculatePrice()">Calculate</button>
-                The new calculated price:<INPUT type="text" id="PicExtPrice">
-                <br>
-                <br>
-            </div>
-            <div class="container" id="remove">
-                <h3>Remove A Pizza From Your Order</h3>
-                <br>
-                <ul id="ordersRemove">
-                </ul>
-                <br>
-                <button type="button" class="btn btn-info" id="goBack">Go Back</button>
-                <button type="button" class="btn btn-danger" id="removeNowButton">Remove Pizza</button>
-                <br>
-                <br>
-            </div>
-            <div class="container" id=receipt>
-                <h3>Your Order Total Is:</h3>
-                <h2>$<span id="total2"></span>.00</h2>
-                <br>
-                <button type="button" class="btn btn-success" id="receiptButton">Complete Your Order</button>
-                <button type="button" class="btn btn-info" id="requestDelivery">Request Delivery</button>
-                <button type="button" class="btn btn-danger" id="cancelOrder">Cancel Your Order</button>
-                <br>
-                <br>
-            </div>
-            <div class="container" id="delivery">
-                <h3>Delivery Address</h3>
-                <form id="address">
-                    <br>
-                    <div class="form-group">
-                        <label for="first-name">First Name</label>
-                        <input type="text" class="form-control" id="firstName">
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" class="form-control" id="lastName">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone-number">Phone Number</label>
-                        <input type="text" class="form-control" id="phoneNumber">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailAddress">Email</label>
-                        <input type="text" class="form-control" id="emailAddress">
-                    </div>
-                    <div class="form-group">
-                        <label for="street-address">Street Address</label>
-                        <input type="text" class="form-control" id="streetAddress">
-                    </div>
-                    <div class="form-group">
-                        <label for="city">City</label>
-                        <input type="text" class="form-control" id="city">
-                    </div>
-                    <div class="form-group">
-                        <label for="state">State</label>
-                        <input type="text" class="form-control" id="state">
-                    </div>
-                    <div class="form-group">
-                        <label for="zipcode">Zip Code</label>
-                        <input type="text" class="form-control" id="zipcode">
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-default" id="addressButton">Submit Address</button>
-                    <br>
-                    <br>
-                </form>
-            </div>
-            <div class="container" id="displayDeliveryInfo">
-                <h3>Your Order Delivery Details</h3>
-                <p>Total: $<span id="total3"></span>.00</p>
-                <p> <span class="firstName"></span>
-                    <span class="lastName"></span>
-                </p>
-                <p> <span class="phoneNumber"></span> </p>
-                <p> <span class="emailAddress"></span> </p>
-                <p> <span class="streetAddress"></span> </p>
-                <p> <span class="city"></span> <span class="state"></span> <span class="zipcode"></span></p>
-                <br><button type="button" class="btn btn-success" id="deliveryInfoButton">Complete Your Order</button>
-                <br><br>
-            </div>
-            <div class="container" id="thankYou">
-                <br>
-                <h3>Thank you for your visit. <em id="bye">Arrivederci!</em></h3>
-                <br>
-                <button type="button" class="btn btn-default" id="thankYouButton">Go Home</button>
-                <br>
-                <br>
             </div>
         </div>
     </div>
-    <br>
-    <div class="footer">
-        <h4>Our Address and phone number goes here:</h4> ephraimkamau@gmail.com 
-               /0745734706
+
+    <div class="orderhere">
+        <h2>PLACE YOUR ORDER</h2>
+        <form class="form-group" id="custom-pizza">
+            <div class="order">
+                <div class="row pt-5">
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <div class="card-body">
+                               
+                                <p class="card-text">Choose the size of Pizza:</p>
+                                <select required class="form-control" id="size">
+                                    <option></option>
+                                    <option value="small-pizza">small (500)</option>
+                                    <option value="medium-pizza">medium (750)</option>
+                                    <option value="large-pizza">large (1000)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                           
+                            <div class="card-body">
+                                
+                                <p class="card-text">Choose a crust:</p>
+                                <select required class="form-control" id="crust">
+                                    <option></option>
+                                    <option value="Gulet free">gulet free (100)</option>
+                                    <option value="thick">Thick (150)</option>
+                                    <option value="stuffed">Stuffed (150)</option>
+                                    <option value="crispy">Crispy (150)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            
+                            <div class="card-body">
+                               
+                                <p class="card-text">Choose toppings:</p>
+                                <select required class="form-control" id="toppings">
+                                    <option></option>
+                                    <option value="tomatoes">tomatoes (100)</option>
+                                    <option value="beef">beef (150)</option>
+                                    <option value="Onions/bacon">onions/Bacon (200)</option>
+                                    <option value="pepper">pepper (150)</option>
+                                    <option value="chicken">Chicken (150)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div><br><br>
+
+    <input type="number" id="amount" placeholder="Number of pizzas" required>
+    <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+    </form>
+
+    <div id="container">
+        <div class="card">
+            <div class="card-body">
+                <div id="price-content">
+                    <h1 class="page-header"></h1>
+                    <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
+                    <div id="deliver" class="deliver">
+
+                        
+                        <h5>deliver fee is 100</h5><br>
+                        <form id="address-form">
+                            <div class="col-xs-6">
+                                <label for="first-name">TONLION</label>
+                                <input id="location" type="text" size="40" placeholder="Enter where your location..."
+                                    required />
+                                <button class="btn btn-dark complete" type="submit">Enter</button>
+                                <h3><span id="delivery-option"></span></h3>
+                            </div>
+                        </form>
+                    </div><br>
+                    <button type="btn" class="btn btn-dark" id="checkout-btn">Checkout</button><br><br>
+                    <div id="order-details" class="col-xs-12">
+                        <ul id="pizza-details"><strong>Your order is: </strong></ul>
+                        <h5 id="pizza-details">Thank you and Welcome again!</h5>
+                    </div>
+                    <footer>
+                        <p>Reach us on contacts: /0745734706</p>
+                        <img src="images/twitter.jpeg" alt="twitter" style="max-width: 15%;">
+                        <img src="images/FB.jpeg" alt="facebook" style="max-width: 15%;">
+                        <img src="images/YouTube.jpeg" alt="you_tube" style="max-width: 15%;">
+                        <P>@pizza site 2021</P>
+                    </footer>
+                </div>
+            </div>
+        </div>
     </div>
-<script src=".//js/jquery-3.4.1.js"></script>
-<script src="js/script.js"></script>
+    <script src=".//js/jquery.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

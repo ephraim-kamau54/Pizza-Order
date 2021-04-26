@@ -1,3 +1,18 @@
+.jumbtron>p, .page-header, #price-content>h1 {
+    font-family: fantasy; 
+    font-size: xx-large;}
+.jumbtron {
+    margin-right: 700px;
+    background-color: inherit;
+    color: burlywood ;
+    margin-top: 60px;}
+
+.top {
+    background-color:burlywood;
+    color:blue;
+    height: 150px;
+    border-bottom: 5px solid goldenrod;}
+
 body {
     text-align: center;
     background-color: wheat;
