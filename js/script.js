@@ -12,31 +12,31 @@ $(document).ready(function () {
     }
     Order.prototype.pizzaCost = function () {
         if (this.size === "small-pizza") {
-            this.pizzaPrice += 500;
+            this.pizzaPrice += 700;
         } else if (this.size === "medium-pizza") {
-            this.pizzaPrice += 750;
+            this.pizzaPrice += 950;
         } else if (this.size === "large-pizza") {
-            this.pizzaPrice += 1000;
+            this.pizzaPrice += 2000;
         }
         if (this.crust === "cheese-filled") {
             this.pizzaPrice += 100;
         } else if (this.crust === "thick") {
-            this.pizzaPrice += 150;
+            this.pizzaPrice += 200;
         } else if (this.crust === "stuffed") {
-            this.pizzaPrice += 150;
+            this.pizzaPrice += 250;
         } else if (this.crust === "crispy") {
-            this.pizzaPrice += 150;
+            this.pizzaPrice += 100;
         }
         if (this.toppings === "pepperoni") {
-            this.pizzaPrice += 100;
+            this.pizzaPrice += 200;
         } else if (this.toppings === "sausage") {
-            this.pizzaPrice += 150;
+            this.pizzaPrice += 350;
         } else if (this.toppings === "bacon") {
             this.pizzaPrice += 200;
         } else if (this.toppings === "mushrooms") {
-            this.pizzaPrice += 150;
+            this.pizzaPrice += 450;
         } else if (this.toppings === "chicken") {
-            this.pizzaPrice += 150;
+            this.pizzaPrice += 250;
         }
     };
     //Business logic
