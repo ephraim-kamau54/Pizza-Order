@@ -45,11 +45,11 @@ $(document).ready(function () {
         this.deliveryAddress = (address);
     }
     Order.prototype.finalCost = function () {
-        var cartTotalPrice = [];
+        var returnTotalPrice = [];
         for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
-            cartTotalPrice += totalPriceArray[arrayElement];
+            returnTotalPrice += totalPriceArray[arrayElement];
         }
-        return trolleyTotalPrice;
+        return returnTotalPrice;
     };
     $(".btn.check-out").click(function () {
     });
